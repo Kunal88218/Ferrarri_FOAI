@@ -117,7 +117,7 @@ export default function LaFerrariScrollCanvas({
     return (
         <canvas
             ref={canvasRef}
-            className={`fixed inset-0 w-full h-full object-contain transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"
+            className={`fixed inset-0 w-screen h-screen object-cover transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"
                 }`}
             style={{ zIndex: 0 }}
         />
