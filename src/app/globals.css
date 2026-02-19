@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: var(--color-laferrari-black);
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-rajdhani), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-racing-red);
+  color: white;
+}
+
+/* Custom Utilities */
+.glass-panel {
+  background: rgba(5, 5, 5, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hud-text {
+  font-family: var(--font-orbitron);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
