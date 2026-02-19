@@ -70,10 +70,10 @@ export default function LaFerrariScrollCanvas({
         // Clear
         ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-        // Object-fit: contain logic
+        // Object-fit: cover logic (fill screen)
         const hRatio = window.innerWidth / img.width;
         const vRatio = window.innerHeight / img.height;
-        const ratio = Math.min(hRatio, vRatio); // contain
+        const ratio = Math.max(hRatio, vRatio); // cover
 
         const centerShift_x = (window.innerWidth - img.width * ratio) / 2;
         const centerShift_y = (window.innerHeight - img.height * ratio) / 2;

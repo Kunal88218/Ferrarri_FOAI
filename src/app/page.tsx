@@ -95,15 +95,54 @@ function Features() {
 
 function Footer() {
   return (
-    <footer className="py-12 border-t border-white/10 bg-black text-center">
-      <div className="mb-4">
-        <span className="font-orbitron font-bold text-2xl tracking-wider uppercase">
-          Ferrari
-        </span>
+    <footer className="py-16 border-t border-white/10 bg-black text-white">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+        <div>
+          <span className="font-orbitron font-bold text-2xl tracking-wider uppercase block mb-4">
+            Ferrari
+          </span>
+          <p className="font-rajdhani text-gray-500 text-sm leading-relaxed">
+            The definition of excellence. A legacy of speed, passion, and innovation derived from the track to the road.
+          </p>
+        </div>
+
+        {/* Links Column 1 */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-orbitron font-bold uppercase tracking-wider mb-2 text-sm text-gray-400">Models</h4>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">SF90 Stradale</a>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">296 GTB</a>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">812 Superfast</a>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">Roma</a>
+        </div>
+
+        {/* Links Column 2 */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-orbitron font-bold uppercase tracking-wider mb-2 text-sm text-gray-400">World</h4>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">Scuderia Ferrari</a>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">Musei Ferrari</a>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">Store</a>
+          <a href="#" className="font-rajdhani hover:text-laferrari-red transition-colors text-sm">Races</a>
+        </div>
+
+        {/* Social / Legal */}
+        <div className="flex flex-col gap-4">
+          <h4 className="font-orbitron font-bold uppercase tracking-wider mb-2 text-sm text-gray-400">Connect</h4>
+          <div className="flex justify-center md:justify-start gap-4">
+            <div className="w-8 h-8 bg-white/10 hover:bg-laferrari-red transition-colors rounded-full flex items-center justify-center cursor-pointer">
+              <span className="text-xs font-bold">IG</span>
+            </div>
+            <div className="w-8 h-8 bg-white/10 hover:bg-laferrari-red transition-colors rounded-full flex items-center justify-center cursor-pointer">
+              <span className="text-xs font-bold">X</span>
+            </div>
+            <div className="w-8 h-8 bg-white/10 hover:bg-laferrari-red transition-colors rounded-full flex items-center justify-center cursor-pointer">
+              <span className="text-xs font-bold">YT</span>
+            </div>
+          </div>
+          <p className="font-rajdhani text-gray-600 text-xs mt-4">
+            © 2024 Ferrari S.p.A.
+          </p>
+        </div>
       </div>
-      <p className="font-rajdhani text-gray-500 text-sm">
-        © 2024 Ferrari S.p.A. All rights reserved.
-      </p>
     </footer>
   );
 }
